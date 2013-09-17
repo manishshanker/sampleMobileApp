@@ -1,4 +1,4 @@
-samplembileapp
+samplemobileapp
 ==============
 
 Sample mobile application

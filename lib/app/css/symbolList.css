@@ -27,8 +27,15 @@
     padding: 3px 4px;
 }
 
+#symbolList th.bid-price {
+    color: #FAC5C5;
+}
+
+#symbolList th.ask-price {
+    color: #C5E2FA;
+}
+
 #symbolList .symbols .symbol {
-    text-align: left;
     font-weight: bold;
 }
 
@@ -108,4 +115,6 @@
 
 #symbolList .symbol-detail .title {
     font-size: 80%;
+    margin: 5px;
+    display: inline-block;
 }

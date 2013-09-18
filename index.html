@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="lib/app/css/symbolList.css"/>
 
     <script type="text/javascript" src="lib/vendor/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="lib/vendor/jquery.sparkline.min.js"></script>
     <script type="text/javascript" src="lib/app/js/helper/supplant.js"></script>
     <script type="text/javascript" src="lib/app/js/helper/jquery.getTemplate.js"></script>
     <script type="text/javascript" src="lib/app/js/helper/messaging.js"></script>
@@ -28,6 +29,7 @@
                 <thead>
                     <tr>
                         <th class="symbol">Symbol</th>
+                        <th class="spark-line">Change</th>
                         <th class="bid-price">Bid</th>
                         <th class="ask-price">Ask</th>
                     </tr>
@@ -36,16 +38,17 @@
                     <script id="symbolListRow" type="text/template">
                         <tr id="row_{{symbol}}">
                             <td class="symbol"><a href="#{{symbol}}__symbol">{{symbol}}</a></td>
+                            <td class="spark-line {{symbol}}__sparkLine"></td>
                             <td class="bid-price"><a href="#{{symbol}}__bid" class="direction_{{bidDirection}}">{{bidPrice}}</a></td>
                             <td class="ask-price"><a href="#{{symbol}}__ask" class="direction_{{askDirection}}">{{askPrice}}</a></td>
                         </tr>
                     </script>
                     <script id="symbolDetailRow" type="text/template">
                         <tr>
-                            <td colspan="3" class="symbol-detail">
+                            <td colspan="4" class="symbol-detail">
                                 <div class="symbol-detail-content">
                                     <a href="#closeDetail" class="close">X Close</a>
-                                    <span class="title">{{fullName}}({{symbol}})</span>
+                                    <h3 class="title">{{fullName}} ({{symbol}})</h3>
                                 </div>
                             </td>
                         </tr>

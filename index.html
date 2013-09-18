@@ -10,6 +10,10 @@
 
     <script type="text/javascript" src="lib/vendor/jquery-2.0.3.min.js"></script>
     <script type="text/javascript" src="lib/vendor/jquery.sparkline.min.js"></script>
+
+    <script src="http://code.highcharts.com/stock/highstock.js"></script>
+    <!--<script src="http://code.highcharts.com/stock/modules/exporting.js"></script>-->
+
     <script type="text/javascript" src="lib/app/js/helper/supplant.js"></script>
     <script type="text/javascript" src="lib/app/js/helper/jquery.getTemplate.js"></script>
     <script type="text/javascript" src="lib/app/js/helper/messaging.js"></script>
@@ -49,6 +53,7 @@
                                 <div class="symbol-detail-content">
                                     <a href="#closeDetail" class="close">X Close</a>
                                     <h3 class="title">{{fullName}} ({{symbol}})</h3>
+                                    <div class="chart"></div>
                                 </div>
                             </td>
                         </tr>

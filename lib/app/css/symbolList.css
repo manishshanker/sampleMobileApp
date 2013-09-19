@@ -118,6 +118,9 @@
     height: 300px;
     position: relative;
     color: #000;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 300px;
 }
 
 #symbolList .symbol-detail .title {

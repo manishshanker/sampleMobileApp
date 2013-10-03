@@ -5,7 +5,6 @@
     top: 45px;
     bottom: 10px;
     font-size: 130%;
-    overflow-y: auto;
 }
 
 #symbolList .symbols {
@@ -39,8 +38,8 @@
     font-weight: bold;
 }
 
-#symbolList .symbols .bid-price,
-#symbolList .symbols .ask-price {
+#symbolList tr.symbol-list-row .symbols .bid-price,
+#symbolList tr.symbol-list-row .symbols .ask-price {
     text-align: right;
 }
 
@@ -86,7 +85,7 @@
 
 #symbolList .symbol-detail-content {
     width: 100%;
-    height: 350px;
+    min-height: 350px;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
@@ -132,4 +131,62 @@
 #symbolList a.close {
     font-size: 65%;
     min-width: 10px;
+}
+
+#symbolList .symbol-detail .symbol-description {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    font-size: 80%;
+    background: #dddddd;
+}
+
+#symbolList .symbol-ticket .bid,
+#symbolList .symbol-ticket .ask {
+    display: none;
+}
+
+#symbolList .symbol-ticket .symbol-detail-content {
+    background-color: #e5e5e5;
+    height: auto;
+}
+
+#symbolList .symbol-ticket .bid-price,
+#symbolList .symbol-ticket .ask-price {
+    margin: 20px 5px 10px 5px;
+}
+
+#symbolList .symbol-ticket .trade-price {
+    font-size: 80%;
+    display: inline-block;
+    width: 70px;
+    text-align: right;
+}
+
+#symbolList .symbol-ticket .trade-size {
+    margin: 5px;
+}
+
+#symbolList .symbol-ticket .trade-size label {
+    font-size: 80%;
+    display: inline-block;
+    width: 70px;
+    text-align: right;
+}
+
+#symbolList .symbol-ticket .trade-size input {
+    width: 100px;
+    padding: 3px 0;
+    border: 0;
+    text-indent: 5px;
+    font-size: 120%;
+    -webkit-box-shadow: inset 1px 2px 5px 1px #9FA2AC;
+    box-shadow: inset 1px 2px 5px 1px #9fa2ac;
+    border-radius: 5px;
+    background: #ffffff;
+}
+
+#symbolList .symbol-ticket .trade-button {
+    margin: 20px;
+    text-align: center;
 }

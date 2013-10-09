@@ -109,7 +109,7 @@
 #symbolList .symbol-detail .close {
     position: absolute;
     right: 5px;
-    top: 5px;
+    top: 8px;
 }
 
 #symbolList .symbol-detail .chart {
@@ -124,13 +124,20 @@
 
 #symbolList .symbol-detail .title {
     font-size: 80%;
-    margin: 5px;
+    margin: 15px 5px 5px 5px;
     display: inline-block;
 }
 
 #symbolList a.close {
     font-size: 65%;
     min-width: 10px;
+}
+
+#symbolList .symbol-remove {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    text-align: center;
 }
 
 #symbolList .symbol-detail .symbol-description {
